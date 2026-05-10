@@ -1,0 +1,11 @@
+# python
+*/**/__pycache__/*
+__pycache__/
+venv/*
+
+# misc
+.DS_STORE
+config.py
+price.log
+api-key.log
+myenv
