@@ -8,7 +8,7 @@ def gen_p():
 
     # --- Try CoinPaprika ---
     try:
-        response = requests.get("https://api.coinpaprika.com/v1/tickers/cicx-cicoin", timeout=10)
+        response = requests.get("https://api.coinpaprika.com/v1/tickers/nux-nusacoin", timeout=10)
         response.raise_for_status()
         data = response.json()
         gusd = round(float(data['quotes']['USD']['price']), 10)
@@ -51,7 +51,7 @@ def gen_p():
     # ------miningpoolstats
     from requests_html import HTMLSession
 
-    url = "https://miningpoolstats.stream/cicoin"
+    url = "https://miningpoolstats.stream/nusacoin"
 
     session = HTMLSession()
     resp = session.get(url)

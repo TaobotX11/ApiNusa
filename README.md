@@ -17,14 +17,30 @@ debug = False
 block_page = 10
 tx_page = 25
 ```
+# Latest Ubuntu Install dependencies
+Ubuntu 22.04 pyton 3.8
+==================
+go to to project dir
 
-# Install dependencies
-```
+- use virtual env for latest ubuntu, python 3.8 recommended
+- install virtual env
+$ sudo add-apt-repository ppa:deadsnakes/ppa
+$ sudo apt update
+$ sudo apt install python3.8 python3.8-venv
+$ python3.8 -m venv apitestnetenv
+
+# Activate the environment
+source apitestnetenv/bin/activate
+
+# Check that the localized environment version is correct
+python --version
+
+# Install Dependencies
 $ sudo apt-get install python3-pip
-$ sudo pip3 install python-webargs
-$ sudo pip3 install python-dateutil
+$ pip install --upgrade pip
+$ pip3 install webargs
+$ pip3 install python-dateutil
 $ pip3 install -r requirements.txt
-use virtual env for latest ubuntu, python 3.8 recommended
 ```
 
 # Run
