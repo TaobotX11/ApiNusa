@@ -33,6 +33,15 @@ class Address:
         return data
 
     @classmethod
+    def generatecoin(cls, address: str):
+        data = utils.make_request("generatetoaddress", [1, address])
+        if data["error"] is None:
+            data["result"] = data["result"]
+        else:
+            data["result"] = {"error": ""}
+        return data
+
+    @classmethod
     def utxoaddress(cls, address: str):
         address_descriptor = f"addr({address})"
         data = utils.make_request("scantxoutset", ["start", [address_descriptor]])

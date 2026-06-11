@@ -149,6 +149,12 @@ def sendtoaddress():
     return Transaction().sendtoaddress(dest,int(amount), keyapi)
 
 @stats.rest
+@blueprint.route("/generate", methods=["POST"])
+def generatecoin():
+    address = request.values.get("address")
+    return Address().generatecoin(address)
+
+@stats.rest
 @blueprint.route("/supply", methods=["GET"])
 def supply():
     data = General().supply()
