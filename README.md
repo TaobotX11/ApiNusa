@@ -20,7 +20,7 @@ tx_page = 25
 # Latest Ubuntu Install dependencies
 Ubuntu 22.04 pyton 3.8
 ==================
-go to to project dir
+go to to project dirictory
 
 - use virtual env for latest ubuntu, python 3.8 recommended
 - install virtual env
