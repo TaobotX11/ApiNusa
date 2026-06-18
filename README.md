@@ -20,7 +20,7 @@ tx_page = 25
 # Latest Ubuntu Install dependencies
 Ubuntu 22.04 python 3.8
 ==================
-go to to project directory
+- go to to project directory
 
 - use virtual env for latest ubuntu, python 3.8 recommended
 - install virtual env
@@ -31,8 +31,10 @@ $ sudo apt install python3.8 python3.8-venv
 $ python 3.8 -m venv apitestnetenv
 ```
 # Activate the environment
+```
 source apitestnetenv/bin/activate
-
+```
+ 
 # Check that the localized environment version is correct
 python --version
 
@@ -49,10 +51,10 @@ $ pip3 install -r requirements.txt
 ```
 $ python3 app.py
 ```
-
+#
 All request should be send to this endpoint: `https://yourdomain`
 
-Responce have following fields:
+Response have following fields:
 
 - `result`: list or object which contains requested data.
 - `error`: this field contains error message in case something went wrong.
