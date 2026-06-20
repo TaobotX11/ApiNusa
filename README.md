@@ -61,3 +61,4 @@ Response have following fields:
 - `id`: api server identifier which is set in `config.py` file.
 
 P.s. keep in mind, that all amounts in this API should be in **nusan**.
+-  make sure use **https**
