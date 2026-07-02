@@ -13,7 +13,7 @@ secret = 'YOU SHOULD HAVE A VERY STRONG PASSWORD HERE'
 endpoint = "http://rpcuser:rpcpassword@127.0.0.1:8332/" # RPC
 host = "0.0.0.0"
 port = 1234
-debug = False
+debug = True
 block_page = 10
 tx_page = 25
 ```
